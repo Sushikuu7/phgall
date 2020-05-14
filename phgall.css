@@ -1,0 +1,144 @@
+															/* CSS for New Photos Site */
+html {
+	background-color: #262626;
+}
+
+body {
+	margin: 0% 15%;
+	font-family: ubuntu, sans-serif;
+}
+
+h1 {
+	color: #FFF;
+	text-align: center;
+	position: relative;
+	font-family: ubuntu, sans-serif;
+	font-size: 80px;
+	padding: 0px;
+}
+
+h2 {
+	color: #000;
+	font-family: ubuntu, sans-serif;
+    padding-top: 11rem;
+    padding-bottom: 10rem;
+	font-size: 40px;
+	
+	/*4285F4*/
+}
+
+h3 {
+	color: #F277F7;
+	font-family: ubuntu, sans-serif;
+	font-size: 30px;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-family: ubuntu, sans-serif;
+	color: #000;
+}
+
+img {
+	max-width: 80%;
+	object-fit: cover;
+	align-content: left;
+}
+
+iframe {
+	display: block;
+	margin: 10% 10% auto;
+}
+
+.page_title {
+	color: #4285F4;
+	position: relative;
+	font-family: ubuntu, sans-serif;
+	font-size: 60px;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+	padding-left: 1%;
+}
+
+.content {
+	display: inline;
+	list-style-type: none;
+	float: left;
+}
+
+.card {
+	display: inline-block;
+	background-color: #FFF;
+	opacity: 0.75;
+	width: 25rem;
+	height: 30rem;
+	border-radius: 10px;
+	margin: 1rem;
+	text-align: center;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	}
+
+.cover {
+	width: 25rem;
+	height: 35rem;
+	border-radius: 10px;
+	margin: 1rem;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 0.25rem solid #FFF;
+  border-radius: 0.125rem;
+  float: left;
+  width: 25rem;
+  height: 25rem;
+
+}
+
+div.gallery:hover {
+  border: 0.25rem solid #A5A5A5;
+  border-radius: 0.125rem;
+}
+
+div.gallery img {
+	object-fit: cover;
+    width: 25rem;
+    height: 25rem;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+div.desc {
+  padding: 15px;
+  font-family: ubuntu, sans-serif;
+  text-align: center;
+}
+
+/*List of Helpful Links*/
+
+li {
+	display: inline;
+	list-style-type: none;
+	float: right;
+}
+
+li a {
+	display: block; 
+	color: #FFF;
+	text-align: right;
+	padding: 10px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: #D8D8D8;
+}
