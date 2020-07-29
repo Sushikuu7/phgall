@@ -1,4 +1,4 @@
-															/* CSS for New Photos Site */
+															/* CSS for New Photos Site (Now with Letters! July 29 2020) */
 html {
 	background-color: #262626;
 }
@@ -10,7 +10,7 @@ body {
 
 h1 {
 	color: #FFF;
-	text-align: center;
+	text-align: left;
 	position: relative;
 	font-family: ubuntu, sans-serif;
 	font-size: 80px;
@@ -38,6 +38,7 @@ h3 {
 p {
 	font-family: ubuntu, sans-serif;
 	color: #FFF;
+	text-align: left;
 }
 
 img {
@@ -62,7 +63,7 @@ iframe {
 	text-align: center;
 }
 
-.left {
+.titleleft {
 	text-align: left;
 	padding-left: 1%;
 }
@@ -123,7 +124,7 @@ div.desc {
   text-align: center;
 }
 
-/*List of Helpful Links*/
+/*List of Helpful Links at the Top*/
 
 li {
 	display: inline;
@@ -140,5 +141,22 @@ li a {
 }
 
 li a:hover {
+	color: #D8D8D8;
+}
+
+/*To display the list of Letters on the Letters page*/
+
+.letterlist {
+	text-align: left;
+	text-decoration: none;
+	font-size: 2rem;
+	display: block;
+	color: #FFF;
+	font-family: ubuntu, sans-serif;
+	list-style-type: none;
+	padding: 0.5rem 0rem;
+}
+
+.letterlist:hover {
 	color: #D8D8D8;
 }
