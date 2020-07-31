@@ -1,10 +1,10 @@
-															/* CSS for New Photos Site (Now with Letters! July 29 2020) */
+															/* CSS for New Photos Site (Now with Letters! July 31 2020) */
 html {
 	background-color: #262626;
 }
 
 body {
-	margin: 0% 15%;
+	margin: 0% 10%;
 	font-family: ubuntu, sans-serif;
 }
 
@@ -52,6 +52,8 @@ iframe {
 	margin: 10% 10% auto;
 }
 
+/* Home Page Cards - Credit: Unknown Website with HTML + CSS Cards */
+
 .page_title {
 	color: #4285F4;
 	position: relative;
@@ -72,6 +74,7 @@ iframe {
 	display: inline;
 	list-style-type: none;
 	float: left;
+
 }
 
 .card {
@@ -93,38 +96,41 @@ iframe {
 	margin: 1rem;
 }
 
-div.gallery {
-  margin: 5px;
-  border: 0.25rem solid #FFF;
-  border-radius: 0.125rem;
-  float: left;
-  width: 25rem;
-  height: 25rem;
+/* Scaleable Gallery Grid Setup - Credit: https://codepen.io/vhanla/pen/PxjZvj?editors=1100*/
 
+.gallery {
+  display: grid;
+  grid-column-gap: auto;
+  grid-row-gap: auto;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
 
-div.gallery:hover {
-  border: 0.25rem solid #A5A5A5;
-  border-radius: 0.125rem;
+.gallery img {
+  max-width: 100%;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 1rem #333;
 }
 
-div.gallery img {
-	object-fit: cover;
-    width: 25rem;
-    height: 25rem;
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    overflow: hidden;
+.gallery img:hover {
+  box-shadow: 0 0 1rem #333;
 }
 
-div.desc {
-  padding: 15px;
-  font-family: ubuntu, sans-serif;
-  text-align: center;
+.gallery .content {
+  padding: 0.5rem;
 }
 
-/*List of Helpful Links at the Top*/
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  cursor: pointer;
+}
+
+.gallery .gallery-item:hover {
+  transform: scale(1.02);
+}
+
+/*List of Helpful Links at the Top - Credit: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu*/
 
 li {
 	display: inline;
