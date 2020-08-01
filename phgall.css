@@ -41,6 +41,7 @@ p {
 	text-align: left;
 }
 
+/* In case anything breaks 
 img {
 	max-width: 80%;
 	object-fit: cover;
@@ -51,6 +52,7 @@ iframe {
 	display: block;
 	margin: 10% 10% auto;
 }
+*/
 
 /* Home Page Cards - Credit: Unknown Website with HTML + CSS Cards */
 
@@ -109,25 +111,25 @@ iframe {
 .gallery img {
   max-width: 100%;
   border-radius: 0.25rem;
-  box-shadow: 0 0 1rem #333;
+  box-shadow: 0 0 10px #1E1E1E;
 }
 
 .gallery img:hover {
-  box-shadow: 0 0 1rem #333;
+  box-shadow: 0 0 10px #333;
 }
 
 .gallery .content {
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 .gallery .gallery-item {
-  transition: grid-row-start 300ms linear;
-  transition: transform 300ms ease;
+  transition: transform 300ms;
+  transform: scale(0.98);
   cursor: pointer;
 }
 
 .gallery .gallery-item:hover {
-  transform: scale(1.02);
+  transform: scale(1);
 }
 
 /*List of Helpful Links at the Top - Credit: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu*/
