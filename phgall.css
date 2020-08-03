@@ -18,11 +18,12 @@ h1 {
 }
 
 h2 {
-	color: #4285F4;
+	color: #000;
 	font-family: ubuntu, sans-serif;
     padding-top: 11rem;
     padding-bottom: 10rem;
 	font-size: 40px;
+	/*4285F4*/
 }
 
 p {
