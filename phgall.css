@@ -1,68 +1,95 @@
 															/* CSS for New Photos Site (Now with Letters! July 31 2020) */
+:root {
+	--backgroundColor: #262626;
+	--textMain: white;
+	--textAlt: #d8d8d8;
+	--textDark: #9c9c9c;
+
+}
+
+/*Fonts*/
+@font-face {
+	font-family: openSans;
+	src: url("OpenSansRegular.ttf");
+	font-family: ubuntu;
+	src: url("Ubuntu/Ubuntu-Regular.ttf");
+}
+
 html {
-	background-color: #262626;
+	background-color: var(--backgroundColor);
 }
 
 body {
-	margin: 0% 10%;
-	font-family: ubuntu, sans-serif;
+	margin: 0;
+	padding: 0 10%;
 }
 
 h1 {
-	color: #FFF;
-	text-align: left;
-	position: relative;
+	color: var(--textMain);
 	font-family: ubuntu, sans-serif;
-	font-size: 80px;
-	padding: 0px;
-}
-
-h2 {
-	color: #000;
-	font-family: ubuntu, sans-serif;
-    padding-top: 11rem;
-    padding-bottom: 10rem;
-	font-size: 40px;
-	/*4285F4*/
+	font-size: 64pt;
+	margin: 2rem 0;
 }
 
 p {
 	font-family: ubuntu, sans-serif;
-	color: #FFF;
+	font-size: 12pt;
+	color: var(--textMain);
 	text-align: left;
 }
 
-.titleleft {
-	text-align: left;
-	padding-left: 1%;
-}
+.cardList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 
-/* Home Page Cards - Credit: Unknown Website with HTML + CSS Cards */
-
-.content {
-	display: inline;
 	list-style-type: none;
-	float: left;
+
+	padding: 0 5%;
+}
+
+.cardList a {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+
+	font-size: 24pt;
+	font-family: ubuntu, sans-serif;
+	font-weight: 800;
+	color: var(--backgroundColor);
+
+	padding: 2.5rem;
 }
 
 .card {
-	display: inline-block;
-	background-color: #FFF;
+	background-color: var(--textMain);
 	opacity: 0.75;
-	width: 20rem;
-	height: 30rem;
+	
+	flex-basis: 100vw;
+
 	border-radius: 10px;
 	margin: 1rem;
-	text-align: center;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+
 	transition: transform 300ms;
-	cursor: pointer;
 	}
 
 .card:hover {
 	box-shadow: 0 0 10px #A5A5A5;
 	transform: scale(1.025);
 }
+
+.card:focus {
+	background-color: var(--textAlt);
+}
+
+.card:active {
+	background-color: var(--textAlt);
+}
+
+.card a {
+	flex-grow: 1;
+}
+
 
 /* Scaleable Gallery Grid Setup - Credit: https://codepen.io/vhanla/pen/PxjZvj?editors=1100*/
 
@@ -81,7 +108,7 @@ p {
 }
 
 .gallery img:hover {
-  box-shadow: 0 0 10px #383838;
+  box-shadow: 0 0 10px #333;
 }
 
 .gallery .content {
@@ -100,22 +127,54 @@ p {
 
 /*List of Helpful Links at the Top - Credit: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu*/
 
-li {
-	display: inline;
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: safe flex-end;
+	align-items: center;
+
 	list-style-type: none;
-	float: right;
+
+	padding: 1rem;
+	margin-top: 1rem;
 }
 
-li a {
-	display: block; 
-	color: #FFF;
-	text-align: right;
-	padding: 10px 16px;
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+nav li a:hover {
+	color: var(--textAlt);
+
+	animation-name: navBarHover;
+	animation-duration: 150ms;
+	animation-delay: 0;
+}
+
+@keyframes navBarHover{
+	from {color: white;}
+	to {color: var(--textAlt);}
+}
+
+nav li {
+	display: inline;
+
+	color: var(--textMain);
+	list-style-type: none;
+
+	margin: 0;
+
+	font-size: 12pt;
+	font-family: ubuntu, sans-serif;
+	text-align: center;
+}
+
+nav a {
+	color: var(--textMain);
 	text-decoration: none;
-}
-
-li a:hover {
-	color: #D8D8D8;
+	padding: 0.5rem 1rem;
 }
 
 /*To display the list of Letters on the Letters page*/
@@ -123,14 +182,15 @@ li a:hover {
 .letterlist {
 	text-align: left;
 	text-decoration: none;
-	font-size: 2rem;
-	display: block;
-	color: #FFF;
+	font-size: 24pt;
+	display: flex;
+	color: var(--textMain);
 	font-family: ubuntu, sans-serif;
 	list-style-type: none;
 	padding: 0.5rem 0rem;
 }
 
 .letterlist:hover {
-	color: #D8D8D8;
+	color: var(--textDark);
+
 }
